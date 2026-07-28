@@ -1,6 +1,6 @@
-# Nuclear Entangloporter
+# Isotope Logistics
 
-Nuclear Entangloporter is a Minecraft 1.21.1 NeoForge addon for Mekanism. It gives radioactive chemicals and radioisotopes a complete transport, containment, processing, and optional digital-storage path without mixing them into normal Quantum Entangloporter frequencies.
+Isotope Logistics is a Minecraft 1.21.1 NeoForge addon for Mekanism. It gives radioactive chemicals and radioisotopes a complete transport, containment, processing, and optional digital-storage path without mixing them into normal Quantum Entangloporter frequencies.
 
 The mod is built around one rule: **active radioisotopes are dangerous material, not ordinary inventory items.** Encapsulate them for transport, phase-lock them for safe storage, or keep them on dedicated radioactive disks.
 
