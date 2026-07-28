@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "package": "com.nuclearmekanism.nuclearentangloporter.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "Ae2BasicStorageCellMixin",
+    "Ae2DriveBlockTickerMixin",
+    "RefinedStorageDiskInventoryAccessor",
+    "RefinedStorageDiskDriveTickerMixin",
+    "RefinedStorageItemStorageMixin"
+  ]
+}

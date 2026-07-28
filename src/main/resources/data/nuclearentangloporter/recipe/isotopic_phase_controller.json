@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["AUA", "LSL", "AMA"],
+  "key": {"A": {"item": "mekanism:alloy_atomic"}, "U": {"item": "mekanism:ultimate_control_circuit"}, "L": {"item": "mekanism:ingot_lead"}, "S": {"item": "mekanism:steel_casing"}, "M": {"item": "nuclearentangloporter:stabilization_matrix"}},
+  "result": {"id": "nuclearentangloporter:isotopic_phase_controller"}
+}

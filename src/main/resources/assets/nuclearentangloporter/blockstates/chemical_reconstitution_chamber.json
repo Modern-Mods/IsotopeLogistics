@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model": "nuclearentangloporter:block/chemical_reconstitution_chamber"},
+    "facing=south": {"model": "nuclearentangloporter:block/chemical_reconstitution_chamber", "y": 180},
+    "facing=east": {"model": "nuclearentangloporter:block/chemical_reconstitution_chamber", "y": 90},
+    "facing=west": {"model": "nuclearentangloporter:block/chemical_reconstitution_chamber", "y": 270}
+  }
+}

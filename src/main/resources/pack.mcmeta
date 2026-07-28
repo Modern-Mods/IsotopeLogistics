@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "Resources for the Nuclear Entangloporter add-on",
+    "pack_format": 22,
+    "supported_formats": {
+      "resource": 22,
+      "data": 22
+    }
+  }
+}

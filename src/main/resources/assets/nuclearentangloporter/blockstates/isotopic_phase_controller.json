@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north,active=false,excite=false": {"model": "nuclearentangloporter:block/isotopic_phase_controller_stabilize", "y": 90},
+    "facing=south,active=false,excite=false": {"model": "nuclearentangloporter:block/isotopic_phase_controller_stabilize", "y": 270},
+    "facing=east,active=false,excite=false": {"model": "nuclearentangloporter:block/isotopic_phase_controller_stabilize", "y": 180},
+    "facing=west,active=false,excite=false": {"model": "nuclearentangloporter:block/isotopic_phase_controller_stabilize"},
+    "facing=north,active=true,excite=false": {"model": "nuclearentangloporter:block/isotopic_phase_controller_stabilize", "y": 90},
+    "facing=south,active=true,excite=false": {"model": "nuclearentangloporter:block/isotopic_phase_controller_stabilize", "y": 270},
+    "facing=east,active=true,excite=false": {"model": "nuclearentangloporter:block/isotopic_phase_controller_stabilize", "y": 180},
+    "facing=west,active=true,excite=false": {"model": "nuclearentangloporter:block/isotopic_phase_controller_stabilize"},
+    "facing=north,active=false,excite=true": {"model": "nuclearentangloporter:block/isotopic_phase_controller_excite", "y": 90},
+    "facing=south,active=false,excite=true": {"model": "nuclearentangloporter:block/isotopic_phase_controller_excite", "y": 270},
+    "facing=east,active=false,excite=true": {"model": "nuclearentangloporter:block/isotopic_phase_controller_excite", "y": 180},
+    "facing=west,active=false,excite=true": {"model": "nuclearentangloporter:block/isotopic_phase_controller_excite"},
+    "facing=north,active=true,excite=true": {"model": "nuclearentangloporter:block/isotopic_phase_controller_excite", "y": 90},
+    "facing=south,active=true,excite=true": {"model": "nuclearentangloporter:block/isotopic_phase_controller_excite", "y": 270},
+    "facing=east,active=true,excite=true": {"model": "nuclearentangloporter:block/isotopic_phase_controller_excite", "y": 180},
+    "facing=west,active=true,excite=true": {"model": "nuclearentangloporter:block/isotopic_phase_controller_excite"}
+  }
+}

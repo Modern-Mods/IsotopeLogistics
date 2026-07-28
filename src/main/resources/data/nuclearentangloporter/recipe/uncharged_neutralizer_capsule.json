@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "nuclearentangloporter:empty_pill_capsule"},
+    {"item": "nuclearentangloporter:neutralizing_compound"}
+  ],
+  "result": {"id": "nuclearentangloporter:uncharged_neutralizer_capsule"}
+}

@@ -1,0 +1,7 @@
+{
+  "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": "ae2"}],
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["LQL", "QDQ", "LQL"],
+  "key": {"L": {"item": "mekanism:ingot_lead"}, "Q": {"item": "ae2:quartz_glass"}, "D": {"item": "ae2:item_storage_cell_16k"}},
+  "result": {"id": "nuclearentangloporter:ae2_radioactive_disk_16k"}
+}

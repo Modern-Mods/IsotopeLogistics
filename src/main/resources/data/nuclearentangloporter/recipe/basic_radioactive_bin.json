@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["LHL", "HPH", "LHL"],
+  "key": {"L": {"item": "mekanism:ingot_lead"}, "H": {"item": "mekanism:hdpe_pellet"}, "P": {"item": "mekanism:basic_bin"}},
+  "result": {"id": "nuclearentangloporter:basic_radioactive_bin"}
+}

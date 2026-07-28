@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model": "nuclearentangloporter:block/radiological_encapsulator"},
+    "facing=south": {"model": "nuclearentangloporter:block/radiological_encapsulator", "y": 180},
+    "facing=east": {"model": "nuclearentangloporter:block/radiological_encapsulator", "y": 90},
+    "facing=west": {"model": "nuclearentangloporter:block/radiological_encapsulator", "y": 270}
+  }
+}

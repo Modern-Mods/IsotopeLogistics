@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["APA", "UQU", "AMA"],
+  "key": {"A": {"item": "mekanism:alloy_atomic"}, "P": {"item": "mekanism:pellet_polonium"}, "U": {"item": "mekanism:ultimate_control_circuit"}, "Q": {"item": "mekanism:quantum_entangloporter"}, "M": {"item": "nuclearentangloporter:stabilization_matrix"}},
+  "result": {"id": "nuclearentangloporter:nuclear_entangloporter"}
+}

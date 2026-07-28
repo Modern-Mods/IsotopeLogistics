@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["ROR", "LCL", "ROR"],
+  "key": {"R": {"item": "mekanism:alloy_reinforced"}, "O": {"item": "mekanism:ingot_refined_obsidian"}, "L": {"item": "mekanism:ingot_lead"}, "C": {"item": "minecraft:crying_obsidian"}},
+  "result": {"id": "nuclearentangloporter:stabilization_matrix"}
+}

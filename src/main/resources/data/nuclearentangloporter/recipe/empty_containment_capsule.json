@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["LPL", "PGP", "LPL"],
+  "key": {"L": {"item": "mekanism:ingot_lead"}, "P": {"item": "mekanism:hdpe_pellet"}, "G": {"item": "minecraft:glass_pane"}},
+  "result": {"id": "nuclearentangloporter:empty_containment_capsule", "count": 4}
+}

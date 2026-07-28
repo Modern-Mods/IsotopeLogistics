@@ -1,0 +1,7 @@
+{
+  "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": "refinedstorage"}],
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["LQL", "QDQ", "LQL"],
+  "key": {"L": {"item": "mekanism:ingot_lead"}, "Q": {"item": "refinedstorage:quartz_enriched_iron"}, "D": {"item": "refinedstorage:4k_storage_disk"}},
+  "result": {"id": "nuclearentangloporter:rs_radioactive_disk_4k"}
+}

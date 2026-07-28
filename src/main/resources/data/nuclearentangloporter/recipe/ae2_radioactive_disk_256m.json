@@ -1,0 +1,7 @@
+{
+  "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": "ae2"}],
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RCR", "CSC", "RCR"],
+  "key": {"R": {"item": "nuclearentangloporter:ae2_radioactive_disk_64m"}, "C": {"item": "ae2:cell_component_256k"}, "S": {"item": "nuclearentangloporter:stabilization_matrix"}},
+  "result": {"id": "nuclearentangloporter:ae2_radioactive_disk_256m"}
+}

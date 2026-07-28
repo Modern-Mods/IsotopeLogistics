@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RER", "TST", "RER"],
+  "key": {"R": {"item": "mekanism:alloy_reinforced"}, "E": {"item": "mekanism:elite_control_circuit"}, "T": {"item": "mekanism:elite_pressurized_tube"}, "S": {"item": "mekanism:steel_casing"}},
+  "result": {"id": "nuclearentangloporter:chemical_reconstitution_chamber"}
+}

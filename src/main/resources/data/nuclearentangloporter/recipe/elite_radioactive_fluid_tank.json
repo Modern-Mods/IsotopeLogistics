@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["LHL", "HPH", "LHL"],
+  "key": {"L": {"item": "mekanism:ingot_lead"}, "H": {"item": "mekanism:hdpe_pellet"}, "P": {"item": "mekanism:elite_fluid_tank"}},
+  "result": {"id": "nuclearentangloporter:elite_radioactive_fluid_tank"}
+}

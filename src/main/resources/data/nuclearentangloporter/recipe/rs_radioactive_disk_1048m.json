@@ -1,0 +1,7 @@
+{
+  "neoforge:conditions": [{"type": "neoforge:mod_loaded", "modid": "refinedstorage"}],
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["MAM", "MRM", "MAM"],
+  "key": {"M": {"item": "nuclearentangloporter:rs_radioactive_disk_4m"}, "A": {"item": "refinedstorage:advanced_processor"}, "R": {"item": "nuclearentangloporter:rs_radioactive_disk_1024m"}},
+  "result": {"id": "nuclearentangloporter:rs_radioactive_disk_1048m"}
+}

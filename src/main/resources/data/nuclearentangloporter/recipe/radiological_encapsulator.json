@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["RER", "WSW", "RER"],
+  "key": {"R": {"item": "mekanism:alloy_reinforced"}, "E": {"item": "mekanism:elite_control_circuit"}, "W": {"item": "mekanism:radioactive_waste_barrel"}, "S": {"item": "mekanism:steel_casing"}},
+  "result": {"id": "nuclearentangloporter:radiological_encapsulator"}
+}

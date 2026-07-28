@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "mekanism:enriched_carbon"},
+    {"item": "mekanism:dust_fluorite"}
+  ],
+  "result": {"id": "nuclearentangloporter:neutralizing_compound"}
+}
