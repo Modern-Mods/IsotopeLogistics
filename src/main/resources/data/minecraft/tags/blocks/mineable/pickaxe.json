@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "nuclearentangloporter:radiological_encapsulator",
+    "nuclearentangloporter:isotopic_phase_controller",
+    "nuclearentangloporter:chemical_reconstitution_chamber"
+  ]
+}

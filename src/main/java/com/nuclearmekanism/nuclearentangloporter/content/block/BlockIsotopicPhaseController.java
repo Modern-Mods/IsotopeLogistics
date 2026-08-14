@@ -27,6 +27,11 @@ public class BlockIsotopicPhaseController extends BlockTileModel<TileEntityRadio
         registerDefaultState(defaultBlockState().setValue(EXCITE, false));
     }
 
+    public BlockIsotopicPhaseController(Machine<TileEntityRadioisotopeProcessor> type, BlockBehaviour.Properties properties) {
+        super(type, properties);
+        registerDefaultState(defaultBlockState().setValue(EXCITE, false));
+    }
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<net.minecraft.world.level.block.Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);

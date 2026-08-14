@@ -34,6 +34,7 @@ import mekanism.common.registries.MekanismDataComponents;
 import mekanism.common.resource.BlockResourceInfo;
 import mekanism.common.tile.TileEntityBin;
 import mekanism.common.tile.TileEntityFluidTank;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 /**
  * Registers the Nuclear Entangloporter block and item by mirroring Mekanism's tile registration helpers.
@@ -85,7 +86,8 @@ public class NuclearEntangloporterBlocks {
           RADIOLOGICAL_ENCAPSULATOR = processor("radiological_encapsulator", RadioisotopeProcessingBlockTypes.RADIOLOGICAL_ENCAPSULATOR);
     public static final BlockRegistryObject<BlockIsotopicPhaseController, ItemBlockTooltip<BlockIsotopicPhaseController>>
           ISOTOPIC_PHASE_CONTROLLER = BLOCKS.register("isotopic_phase_controller", () -> new BlockIsotopicPhaseController(
-                RadioisotopeProcessingBlockTypes.ISOTOPIC_PHASE_CONTROLLER, properties -> properties.mapColor(BlockResourceInfo.STEEL.getMapColor())),
+                RadioisotopeProcessingBlockTypes.ISOTOPIC_PHASE_CONTROLLER,
+                BlockBehaviour.Properties.of().strength(3.5F, 16).mapColor(BlockResourceInfo.STEEL.getMapColor())),
                 NuclearEntangloporterBlocks::processorItem);
     public static final BlockRegistryObject<BlockTileModel<TileEntityRadioisotopeProcessor, Machine<TileEntityRadioisotopeProcessor>>, ItemBlockTooltip<BlockTileModel<TileEntityRadioisotopeProcessor, Machine<TileEntityRadioisotopeProcessor>>>>
           CHEMICAL_RECONSTITUTION_CHAMBER = processor("chemical_reconstitution_chamber", RadioisotopeProcessingBlockTypes.CHEMICAL_RECONSTITUTION_CHAMBER);
@@ -116,7 +118,9 @@ public class NuclearEntangloporterBlocks {
 
     private static BlockRegistryObject<BlockTileModel<TileEntityRadioisotopeProcessor, Machine<TileEntityRadioisotopeProcessor>>, ItemBlockTooltip<BlockTileModel<TileEntityRadioisotopeProcessor, Machine<TileEntityRadioisotopeProcessor>>>> processor(
           String name, Machine<TileEntityRadioisotopeProcessor> type) {
-        return BLOCKS.register(name, () -> new BlockTileModel<>(type, properties -> properties.mapColor(BlockResourceInfo.STEEL.getMapColor())),
+        // Use explicit properties so these addon machines remain recoverable even with a non-pickaxe tool.
+        return BLOCKS.register(name, () -> new BlockTileModel<>(type,
+                      BlockBehaviour.Properties.of().strength(3.5F, 16).mapColor(BlockResourceInfo.STEEL.getMapColor())),
               NuclearEntangloporterBlocks::processorItem);
     }
 

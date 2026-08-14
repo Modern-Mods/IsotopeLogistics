@@ -8,7 +8,7 @@
   "description.nuclearentangloporter.radiological_encapsulator": "Encapsulates radioactive chemicals into reusable containment capsules.",
   "description.nuclearentangloporter.isotopic_phase_controller": "Phase-locks active capsules or excites them back to their naturally radioactive state.",
   "description.nuclearentangloporter.chemical_reconstitution_chamber": "Reconstitutes active capsules into their original radioactive chemical.",
-  "itemGroup.nuclearentangloporter": "Nuclear Entangloporter",
+  "itemGroup.nuclearentangloporter": "Isotope Logistics",
   "block.nuclearentangloporter.basic_radioactive_chemical_tank": "Basic Radioactive Chemical Tank",
   "block.nuclearentangloporter.advanced_radioactive_chemical_tank": "Advanced Radioactive Chemical Tank",
   "block.nuclearentangloporter.elite_radioactive_chemical_tank": "Elite Radioactive Chemical Tank",

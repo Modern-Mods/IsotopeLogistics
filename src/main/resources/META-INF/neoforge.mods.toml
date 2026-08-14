@@ -5,8 +5,8 @@ issueTrackerURL="https://github.com/nuclearmekanism/NuclearEntangloporter/issues
 
 [[mods]]
 modId="nuclearentangloporter"
-version="${file.jarVersion}"
-displayName="Nuclear Entangloporter"
+version="1.0"
+displayName="Isotope Logistics"
 authors="Nuclear Mekanism Team"
 description='''A Mekanism add-on that mirrors the Quantum Entangloporter while also transporting radioactive chemicals.'''
 displayURL="https://github.com/nuclearmekanism/NuclearEntangloporter"
