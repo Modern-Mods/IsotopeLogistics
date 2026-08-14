@@ -157,13 +157,15 @@ abstract class NormalizeCustomMachineModel : DefaultTask() {
 }
 
 group = "com.nuclearmekanism"
-version = "${property("mod_version")}.${property("mod_build")}".also { println("Building Nuclear Entangloporter v$it") }
+val modVersion = property("mod_version") as String
+version = modVersion
+println("Building Isotope Logistics v$version")
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 }
 
-base.archivesName.set("nuclear_entangloporter")
+base.archivesName.set("IsotopeLogistics")
 
 repositories {
     mavenCentral()

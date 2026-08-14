@@ -1,0 +1,31 @@
+# Suggestions
+
+
+- Automate a lightweight Gradle task or CI check that confirms the Mekanism `:all` classifier remains available, preventing future breakage if the dependency layout changes upstream.
+- Provide a small verification utility that inspects the built jar for `neoforge.mods.toml` and `pack.mcmeta` so future metadata regressions are caught before distribution.
+- Add a diagnostic during development that flags event registrations targeting the wrong bus, preventing regressions like the creative tab listener being attached to NeoForge's global dispatcher.
+- Capture a client-side validation step (perhaps via a simple run configuration or automated screenshot) that ensures Mekanism's shared quantum entangloporter models remain loadable so future Mekanism texture path changes surface quickly.
+- Track upstream changes to `TileEntityQuantumEntangloporter` with a unit test or static analysis check so divergences in frequency/computer APIs surface quickly after Mekanism updates, preventing the ported nuclear tile from desynchronising.
+- Add a client automation script that opens the nuclear entangloporter menu in a test world and asserts the Mekanism screen loads, catching regressions in the container or screen registration pipeline early.
+- Wire a simple annotation processor or static analysis check that validates every `@EventBusSubscriber` class actually exposes `@SubscribeEvent` methods so NeoForge's automatic subscriber scan never fails at runtime again.
+- Consider exposing a configuration option that allows migrating existing quantum entangloporter frequencies into the nuclear namespace for pack makers who want a turnkey upgrade path without manual retuning.
+- Explore upstream hooks for registering custom `FrequencyType` data components so add-ons no longer need bespoke persistence logic for new frequency namespaces.
+- Consider scripting a Mekanism test scenario that links multiple nuclear entangloporters on the same frequency and verifies auto-ejection ticks move normal and radioactive chemicals each tick.
+- Add an automated integration test that selects a nuclear frequency on a fresh world tick and confirms the linked entangloporter exposes fluid and chemical tanks immediately, catching regressions in the new validity flip.
+- Add an in-game integration smoke test that transfers oxygen, nuclear waste, and polonium between linked Nuclear Entangloporters.
+- Add a CI compile check against the latest supported Mekanism release when dependency upgrades become routine.
+- Add an in-game smoke test that places each radioisotope processor; it catches missing Mekanism block attributes before release.
+- Add a game test that checks freshly placed processors expose FE, chemical, and item capabilities on their default sides.
+- Add a radioactivity-enabled pipe smoke test using polonium; default chemical validators otherwise silently reject it.
+- Add an in-game menu smoke test for each radioactive storage tier and the phase-controller toggle, including one-bin-slot insertion/extraction and one empty capsule consumed per encapsulation.
+- Add a client screenshot smoke test for a filled radioactive bin facing each cardinal direction; it catches missing block-entity renderer registration and front-display regressions.
+- Add an AE2/Refined Storage in-game smoke test that inserts an active capsule, rejects a phase-locked capsule, and verifies a save/reload retains radioactive-disk contents.
+- Add a placement smoke test for the Radiological Encapsulator: its upper bounding block must prevent overlap, break with its base, and retain transparent glass plus emissive ports.
+- Add a client visual smoke for all three capsule machines, checking every requested port face after each cardinal rotation.
+- Add an in-game AE2/RS smoke that proves active capsules are rejected by stock disks and accepted only by the radioactive media, including save/reload.
+- Add a client smoke with an operating processor, frequency-linked entangloporter, AE2 ME Drive, and RS Disk Drive to verify machine loops and radioactive particles after dependency updates.
+- Add a JEI client smoke that clicks every processor progress control and confirms its addon category plus machine catalyst are shown.
+- Add an in-game radiation smoke that consumes an Isotope Neutralizer after a known dose and verifies the player returns to Mekanism's baseline radiation without removing the nearby source.
+- Add a datapack-reload smoke that confirms the Empty Pill Capsule Infuser recipe consumes one HDPE Pellet and yields four capsules, catching recipe-schema or count regressions before a client test.
+- Add a three-profile recipe-load smoke for Mekanism-only, Mekanism plus AE2, and Mekanism plus Refined Storage, verifying optional disk recipes never parse against an absent parent-mod registry.
+- If the internal mod ID is ever renamed, add an explicit saved-world migration plan; the 1.0 branding release intentionally preserves `nuclearentangloporter` registry IDs for compatibility.
