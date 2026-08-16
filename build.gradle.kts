@@ -172,6 +172,10 @@ repositories {
     maven("https://modmaven.dev/")
 }
 
+val integrationModsDir = providers.gradleProperty("integration_mods_dir")
+    .orElse("C:/Users/Zach/AppData/Roaming/PrismLauncher/instances/Testing/minecraft/mods")
+    .get()
+
 dependencies {
     compileOnly("mekanism:Mekanism:${property("mekanism_version")}:api")
     // Pull in Mekanism's development "all" jar so the common implementations we mirror are on the compile classpath.
@@ -182,10 +186,10 @@ dependencies {
     runtimeOnly("mekanism:Mekanism:${property("mekanism_version")}:generators")
     runtimeOnly("mekanism:Mekanism:${property("mekanism_version")}:tools")
 
-    // Optional integrations compile against exact jars already used by local Prism instance; neither jar is bundled.
-    compileOnly(files("C:/Users/Zach/AppData/Roaming/PrismLauncher/instances/Testing/minecraft/mods/appliedenergistics2-19.2.17.jar"))
-    compileOnly(files("C:/Users/Zach/AppData/Roaming/PrismLauncher/instances/Testing/minecraft/mods/refinedstorage-neoforge-2.0.9.jar"))
-    compileOnly(files("C:/Users/Zach/AppData/Roaming/PrismLauncher/instances/Testing/minecraft/mods/jei-1.21.1-neoforge-19.39.0.370.jar"))
+    // Optional integrations compile against exact local jars; neither jar is bundled.
+    compileOnly(files("$integrationModsDir/appliedenergistics2-19.2.17.jar"))
+    compileOnly(files("$integrationModsDir/refinedstorage-neoforge-2.0.9.jar"))
+    compileOnly(files("$integrationModsDir/jei-1.21.1-neoforge-19.39.0.370.jar"))
 }
 
 neoForge {

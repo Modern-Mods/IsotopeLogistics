@@ -36,9 +36,8 @@ jobs:
         run: |
           set -euo pipefail
 
-          # build.gradle.kts still points at the local PrismLauncher mod directory.
-          # Recreate that path on the runner; these jars remain compile-only.
-          integration_dir='C:/Users/Zach/AppData/Roaming/PrismLauncher/instances/Testing/minecraft/mods'
+          # These jars are compile-only and are never bundled into the addon.
+          integration_dir='ci-libs'
           mkdir -p "$integration_dir"
 
           fetch_modrinth_jar() {
@@ -57,6 +56,7 @@ jobs:
 
             test -n "$url"
             curl --fail --silent --show-error --location "$url" --output "$integration_dir/$output"
+            test -s "$integration_dir/$output"
           }
 
           fetch_modrinth_jar ae2 19.2.17 appliedenergistics2-19.2.17.jar
@@ -76,7 +76,7 @@ jobs:
           echo "jar=build/libs/IsotopeLogistics-${mod_version}.jar" >> "$GITHUB_OUTPUT"
 
       - name: Build Isotope Logistics
-        run: ./NeoForge/gradlew clean build --no-daemon --console=plain
+        run: ./NeoForge/gradlew clean build --no-daemon --console=plain "-Pintegration_mods_dir=${GITHUB_WORKSPACE}/ci-libs"
 
       - name: Verify Isotope Logistics JAR
         run: |
